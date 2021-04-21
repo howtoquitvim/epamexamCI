@@ -8,12 +8,7 @@ pipeline {
                   }
 	
      stages {
-               stage('GitClone') {
-	   steps {
-		 sh 'git clone https://github.com/howtoquitvim/student-exam2.git .'
-	             }
-	                           }
-
+               
 	stage('InstallVenv'){
 	   steps {
 		sh 'python3 -m venv venv'
